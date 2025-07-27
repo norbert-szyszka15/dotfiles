@@ -1,0 +1,38 @@
+#   /home/nszyszka/.config/ghostty/config
+
+# font config
+
+font-family = "JetBrains Mono"
+
+font-size = 12
+
+bold-is-bright = true
+
+cursor-style = block
+
+# ----------------------------------------------------------
+
+
+# theme config
+
+# set static theme
+theme = catppuccin-macchiato
+
+# automatically change theme according to system
+# theme = light:catppuccin-latte,dark:catppuccin-macchiato
+
+gtk-titlebar = true
+
+gtk-titlebar-hide-when-maximized = true
+
+window-padding-x = 8
+
+window-padding-balance = true
+
+window-theme = ghostty
+
+window-height = 32
+
+window-width = 100
+
+title = " "

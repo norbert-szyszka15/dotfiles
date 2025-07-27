@@ -19,6 +19,7 @@ sudo flatpak mask org.gtk.Gtk3theme.adw-gtk3-dark
 ### **2. Fish shell**
 
 Install fish as a default shell:
+
 ```
 sudo dnf install fish
 ```	
@@ -26,6 +27,7 @@ sudo dnf install fish
 ---
 
 ### **3. Oh My Posh**
+
 ```
 curl -s https://ohmyposh.dev/install.sh | bash -s
 ```
@@ -62,3 +64,21 @@ Install Oki C511dn printer drivers from Fedora repository:
 ```
 sudo dnf install foo2hiperc
 ```
+
+---
+
+### **6. GSConnect fedora nautilus extension**
+
+Install package required for Nautilus integration with GSConnect extension:
+
+```
+sudo dnf install nautilus-gsconnect
+```
+
+---
+
+### **Creating or changing desktop apps icons**
+
+Create, change or replace necessary `.dekstop` and icon files with accordance to instructions listed under link:
+
+https://chatgpt.com/share/68681035-2994-8001-b9d9-003c67efd9be

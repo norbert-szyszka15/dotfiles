@@ -1,0 +1,28 @@
+[Desktop Entry]
+Version=1.0
+Name=FBReader Book Reader
+Name[ru]=Читалка FBReader
+GenericName=Book Reader
+GenericName[ru]=Читалка
+Comment=Reading ebooks
+Comment[ru]=Чтение электронных книг
+Exec=env DESKTOPINTEGRATION=1 /home/nszyszka/AppImages/fbreader_book_reader.appimage %F
+TryExec=/home/nszyszka/AppImages/fbreader_book_reader.appimage
+Icon=/home/nszyszka/AppImages/.icons/fbreader_book_reader.svg
+Terminal=false
+Type=Application
+
+Categories=Utility;
+MimeType=application/epub+zip;application/x-zip-compressed-fb2;application/x-fictionbook+xml;application/x-mobipocket-ebook;application/vnd.readium.license.status.v1.0+json;
+StartupWMClass=FBReader
+Keywords=book;ebook;reader;
+Actions=OpenLibrary;
+
+[Desktop Action OpenLibrary]
+Name=FBReader Book Reader
+Name[ru]=Открыть библиотеку
+Exec=env DESKTOPINTEGRATION=1 /home/nszyszka/AppImages/fbreader_book_reader.appimage %F
+TryExec=/home/nszyszka/AppImages/fbreader_book_reader.appimage
+Icon=/home/nszyszka/AppImages/.icons/fbreader_book_reader.svg
+
+X-AppImage-Version=286adc

@@ -1,0 +1,48 @@
+# .bashrc
+
+# Exit early if not an interactive shell
+[[ $- != *i* ]] && return
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+    . /etc/bashrc
+fi
+
+# User specific environment
+if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]; then
+    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+fi
+export PATH
+export ZELLIJ_AUTO_ATTACH=${ZELLIJ_AUTO_ATTACH:-"true"}
+export ZELLIJ_AUTO_EXIT=${ZELLIJ_AUTO_EXIT:-"true"}
+
+# Uncomment the following line if you don't like systemctl's auto-paging feature:
+# export SYSTEMD_PAGER=
+
+# User specific aliases and functions
+if [ -d ~/.bashrc.d ]; then
+    for rc in ~/.bashrc.d/*; do
+        if [ -f "$rc" ]; then
+            . "$rc"
+        fi
+    done
+fi
+unset rc
+
+# Oh My Posh theme config
+eval "$(oh-my-posh init bash --config ~/.local/share/themes-terminal/pure.omp.json)"
+
+# Autostart zellij with fish shell
+set -x ZELLIJ_ENABLE_WASM 1
+
+if [[ -t 1 && -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        zellij attach -c
+    else
+        zellij
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+fi
