@@ -64,7 +64,7 @@ sudo dnf install foo2hiperc
 
 ---
 
-### **7. GSConnect fedora nautilus extension**
+### **7. GSConnect Fedora Nautilus extension**
 
 Install package required for Nautilus integration with GSConnect extension:
 
@@ -79,3 +79,19 @@ sudo dnf install nautilus-gsconnect
 Create, change or replace necessary `.dekstop` and icon files with accordance to instructions listed under link:
 
 https://chatgpt.com/share/68681035-2994-8001-b9d9-003c67efd9be
+
+---
+
+### **9. Installing and Ulauncher with themes**
+
+Install Ulauncher package from official Fedora repository with command:
+
+```
+sudo dnf install ulauncher
+```
+
+Next, install Ulauncher GNOME theme with the following command (requires `python3` being installed on the system):
+
+```
+python3 <(curl https://raw.githubusercontent.com/aceydot/ulauncher-theme-gnome/main/install.py -fsSL)
+```
