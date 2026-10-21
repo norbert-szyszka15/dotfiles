@@ -95,3 +95,5 @@ Next, install Ulauncher GNOME theme with the following command (requires `python
 ```
 python3 <(curl https://raw.githubusercontent.com/aceydot/ulauncher-theme-gnome/main/install.py -fsSL)
 ```
+
+test
