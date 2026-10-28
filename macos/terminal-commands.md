@@ -19,6 +19,12 @@ brew install fish
 brew install jandedobbeleer/oh-my-posh/oh-my-posh
 ```
 
+4. Install tmux
+
+```zsh
+brew install tmux
+```
+
 ---
 
 ### 1. Drag a window on Cmd+Ctrl+Click:
