@@ -1,0 +1,17 @@
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[gpg]
+	program = /usr/local/bin/gpg
+	format = ssh
+[user]
+	name = norbert-szyszka15
+	email = norbert.szyszka15@gmail.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIKVxF1JBRT3P1C7QIOIj4gvaHKKHl1HFGqyiKzVGMzL
+[commit]
+	gpgsign = true
+[gpg "ssh"]
+	program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
